@@ -1,16 +1,23 @@
-name: dawnsiven's Blog
-url: 
-description: place my thoughts and share my experience.
+title: dawnsiven's Blog
+author: dawnsiven
+url: https://dawnsiven.github.io
+description: Notes, projects, problems, and small ideas.
 
-permalink: /themes/:title/
+theme: no-style-please
+markdown: kramdown
 
-plugins: [jekyll-paginate]
+theme_config:
+  back_home_text: home
+  date_format: "%Y-%m-%d"
+  show_description: true
 
-highlighter: pygments
-paginate: 20
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
-markdown: rdiscount
-rdiscount:
-    extensions: ['smart']
-
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
+exclude:
+  - README.md
+  - Gemfile.lock
+  - Gemfile
+  - Rakefile
+  - vendor

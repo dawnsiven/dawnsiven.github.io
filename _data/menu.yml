@@ -1,0 +1,9 @@
+entries:
+  - title: about
+    entries:
+      - title: Welcome to my blog.
+        url: false
+      - title: I write about study notes, project practice, and problem solving.
+        url: false
+  - title: posts
+    post_list: true
